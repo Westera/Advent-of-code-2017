@@ -22,4 +22,29 @@ class CaptchaSolverTest {
     fun testForthGivenExample() {
         assertEquals(9, CaptchaSolver().solve("91212129"))
     }
+
+    @Test
+    fun testFirstGivenAdvExample() {
+        assertEquals(6, CaptchaSolver().advSolve("1212"))
+    }
+
+    @Test
+    fun testSecondGivenAdvExample() {
+        assertEquals(0, CaptchaSolver().advSolve("1221"))
+    }
+
+    @Test
+    fun testThirdGivenAdvExample() {
+        assertEquals(4, CaptchaSolver().advSolve("123425"))
+    }
+
+    @Test
+    fun testForthGivenAdvExample() {
+        assertEquals(12, CaptchaSolver().advSolve("123123"))
+    }
+
+    @Test
+    fun testFifthGivenAdvExample() {
+        assertEquals(4, CaptchaSolver().advSolve("12131415"))
+    }
 }
